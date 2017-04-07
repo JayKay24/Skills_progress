@@ -17,11 +17,21 @@ def display_greeting():
     print("\tusing the learning map.")
     print("\n{:*^80s}\n".format("*"))
 
+def display_menu():
+    print("\nMenu\n.")
+    print("1. View all skills.")
+    print("2. Mark items done.")
+    print("3. View Progress.")
+    print("4. View Incomplete skills.")
+
 def main():
     # Display the program greeting.
     display_greeting()
 
     while True:
+        # Display the program menu.
+        display_menu()
+        
         # Ask if the user wants to continue.
         while True:
             response = input("\nContinue? (y/n): ")
